@@ -1,0 +1,149 @@
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  height: 70px;
+  padding: 0 15px;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 20vw;
+  width: calc(100% - 20vw);
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Left Section */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  font-size: 1.6em;
+  color: #333333;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.header-logo {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* Center Section (Timer) */
+.header-center {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  margin-right: 12px;
+}
+
+.time-display {
+  font-weight: bold;
+  color: #4CAF50;
+  border: 1px solid #4CAF50;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Timer Button Styles */
+.timer-button {
+  font-size: 1em;
+  padding: 8px 16px;
+  background-color: #4CAF50; /* Default: Green for check-in */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.timer-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.timer-button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.timer-icon {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Right Section */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  font-size: 1.4em;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.notification-icon {
+  margin-left: 25px;
+}
+
+/* User Profile Section */
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  flex-shrink: 0;
+  min-width: 120px;
+  white-space: nowrap;
+}
+
+.user-initials {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.user-name {
+  font-size: 1em;
+  color: #333333;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  max-width: 150px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 8px;
+    left: 0;
+    width: 100%;
+  }
+
+  .header-center {
+    margin: 8px 0;
+    justify-content: center;
+  }
+
+  .header-left, .header-right {
+    justify-content: center;
+  }
+}

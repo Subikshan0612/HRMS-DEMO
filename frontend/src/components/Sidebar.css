@@ -1,0 +1,68 @@
+/* Sidebar styling */
+.sidebar {
+    width: 20vw; /* Sidebar width */
+    height: 100vh; /* Full height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    z-index: 10; /* Sidebar should be above content */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+  }
+  
+  /* Logo styling */
+  .logo {
+    padding: 1.5vw;
+    text-align: center;
+    background-color: #2e2e38;
+    font-size: 1.2vw;
+    font-weight: bold;
+    letter-spacing: 0.1vw;
+    color: #ff0000;
+    border-bottom: 1px solid #3f3f4e;
+  }
+  
+  /* Menu styling */
+  .menuList {
+    flex-grow: 1;
+    padding: 0;
+  }
+  
+  .menuItem .icon {
+    color: #ffffff;
+    padding: 0.5vw 1.5vw;
+    border-radius: 0.5vw;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menuItem:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: rgba(217, 7, 7);
+  }
+  
+  .activeMenuItem {
+    color: red;
+  }
+  
+  .icon {
+    min-width: 2.5vw;
+    color: #e0e0e0;
+    font-size: 1.5vw;
+    transition: color 0.3s ease;
+  }
+  
+  .menuItem:hover .icon {
+    color: #ffffff;
+  }
+  
+  .submenuItem {
+    padding-left: 3vw;
+    color: #b0b0c3;
+  }
+  

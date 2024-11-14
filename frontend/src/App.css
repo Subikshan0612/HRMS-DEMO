@@ -1,0 +1,42 @@
+/* Main container */
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 20vw; /* Sidebar width */
+  height: 100vh; /* Full height */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  z-index: 10; /* Sidebar should be above content */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+/* Content wrapper that contains both header and content */
+.content-wrapper {
+  margin-left: 20vw; /* Make space for the sidebar */
+  flex-grow: 1; /* Take up remaining space */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f5f5f5; /* Light background for content */
+}
+
+/* Content area styling */
+.page-content {
+  margin-top: 70px; /* Push the content below the header */
+  padding: 20px;
+  width: 100%;
+  height: calc(100vh - 70px); /* Subtract header height to fill the remaining space */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  background-color: #f5f5f5;
+}
