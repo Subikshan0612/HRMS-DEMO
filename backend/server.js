@@ -7,6 +7,7 @@ const surveyRoutes = require('./routes/surveyRoutes'); // Import survey routes
 const applicantProfileRoutes = require('./routes/applicantProfileRoutes');
 const interviewRoutes = require('./routes/interviewRoutes');
 const skillZoneRoutes = require('./routes/skillZoneRoutes');
+const employeeRoutes = require('./routes/employeeRoutes');
 
 // Initialize Express app
 const app = express();
@@ -24,6 +25,7 @@ app.use(surveyRoutes);
 app.use('/api/applicantProfiles', applicantProfileRoutes);
 app.use('/api/interviews', interviewRoutes);
 app.use('/api/skill-zone', skillZoneRoutes);
+app.use('/api/employees',employeeRoutes);
 
 
 // Server listening
